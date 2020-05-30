@@ -1,0 +1,31 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-versions: [11.x]
+
+    name: node${{ matrix.node-versions }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up node ${{ matrix.node-versions }}
+        uses: actions/setup-node@v1
+        with:
+          node-versions: ${{ matrix.node-versions }}
+
+      - name: Install dependencies & build
+        run: |
+          npm ci
+          npm run preinstall --if-present
+      - name: Publish to npm
+        run: cd packages/eslint-config && npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
