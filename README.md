@@ -20,7 +20,7 @@ Required dependencies for ALL configs
 ```bash
 # dependencies only for all configs
 
-npm install --save-de eslint eslint-config-scorum
+npm install --save-dev eslint eslint-config-scorum
 ```
 
 ### Base Dependencies
