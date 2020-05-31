@@ -33,7 +33,7 @@ Additionall dependencies for `base` config
 npm install --save-dev eslint babel-eslint eslint-config-scorum eslint-plugin-import
 ```
 
-### React Dependencie
+### React Dependencies
 
 Additionall dependencies for `react` config
 
