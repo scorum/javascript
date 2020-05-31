@@ -20,14 +20,21 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-versions: ${{ matrix.node-versions }}
+          registry-url: 'https://registry.npmjs.org/'
 
       - name: Install dependencies & build
         run: |
           npm run preinstall --if-present
         env:
           CI: true
+
       - name: Publish to npm
-        run: cd packages/eslint-config && npm publish --access public
+        run: |
+          cd packages/eslint-config
+          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+          npm config set scope "andrewww"
+          npm config list
+          npm publish --access public
         env:
           CI: true
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
