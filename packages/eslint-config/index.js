@@ -8,7 +8,6 @@ module.exports = {
   ],
   extends: [
     'eslint-config-airbnb-base',
-    'plugin:prettier/recommended',
   ].concat([
     './rules/best-practices',
     './rules/errors',
@@ -16,7 +15,6 @@ module.exports = {
     './rules/style',
     './rules/variables',
     './rules/import',
-    './rules/prettier',
   ].map(require.resolve)),
   env: {
     es6: true,

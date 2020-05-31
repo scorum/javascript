@@ -4,7 +4,6 @@ module.exports = {
     'airbnb/rules/react-a11y',
     'airbnb/hooks',
     require.resolve('./rules/react'),
-    'prettier/react',
   ],
   parser: 'babel-eslint',
   env: {
