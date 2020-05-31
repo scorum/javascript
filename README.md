@@ -164,3 +164,7 @@ If you need to override a rule, your `.eslintrc.json` file should look like the 
   "globals": {},
   "rules": {}
 }
+
+### ToDo
+
+* [ ] Add automatically bumping package version [release-it](https://github.com/release-it/release-it/blob/master/docs/github-releases.md)
