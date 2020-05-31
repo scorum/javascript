@@ -24,7 +24,10 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm run preinstall --if-present
+        env:
+          CI: true
       - name: Publish to npm
         run: cd packages/eslint-config && npm publish --access public
         env:
+          CI: true
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
