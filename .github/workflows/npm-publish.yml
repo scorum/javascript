@@ -23,7 +23,6 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm ci
           npm run preinstall --if-present
       - name: Publish to npm
         run: cd packages/eslint-config && npm publish --access public
