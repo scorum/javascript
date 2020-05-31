@@ -3,9 +3,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [
-    "prettier"
-  ],
   extends: [
     'eslint-config-airbnb-base',
   ].concat([
