@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-versions: [11.x]
+        node-version: [11.x]
 
     name: node${{ matrix.node-versions }}
     steps:
