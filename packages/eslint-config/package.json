@@ -1,9 +1,10 @@
 {
-  "name": "eslint-config-scorum-alfa",
-  "version": "0.0.10",
+  "name": "eslint-config-scorum",
+  "version": "0.0.1",
   "description": "Different style configs ready to be used in multiple Scorum projects",
   "main": "index.js",
   "files": [
+    "prettier/*.js",
     "rules/*.js",
     "*.js"
   ],
@@ -18,6 +19,7 @@
     "style guide",
     "lint",
     "scorum",
+    "prettier",
     "es6",
     "es2015",
     "es2016",
@@ -32,11 +34,13 @@
     "url": "https://github.com/scorum/javascript/issues"
   },
   "homepage": "https://github.com/scorum/javascript",
+  "dependencies": {
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0"
+  },
   "peerDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.1.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.13.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -49,8 +53,6 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.1.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.13.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",

@@ -1,11 +1,9 @@
-const react = require.resolve('./rules/react');
-
 module.exports = {
   extends: [
     'airbnb/rules/react',
     'airbnb/rules/react-a11y',
     'airbnb/hooks',
-    './rules/react',
+    require.resolve('./rules/react'),
     'prettier/react',
   ],
   parser: 'babel-eslint',
