@@ -12,14 +12,14 @@ jobs:
       matrix:
         node-version: [11.x]
 
-    name: node${{ matrix.node-versions }}
+    name: node${{ matrix.node-version }}
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up node ${{ matrix.node-versions }}
+      - name: Set up node ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-versions: ${{ matrix.node-versions }}
+          node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org/'
 
       - name: Install dependencies & build
