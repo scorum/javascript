@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-scorum",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Different style configs ready to be used in multiple Scorum projects",
   "main": "index.js",
   "files": [

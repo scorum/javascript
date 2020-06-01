@@ -18,6 +18,8 @@ module.exports = {
         proseWrap: 'preserve',
         htmlWhitespaceSensitivity: 'css',
         endOfLine: 'lf',
+        trailingComma: 'es5',
+        arrowParens: 'always',
       },
     ],
   },
