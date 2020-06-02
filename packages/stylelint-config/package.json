@@ -1,0 +1,38 @@
+{
+  "name": "stylelint-config-scorum",
+  "version": "0.0.3",
+  "description": "Different style configs ready to be used in multiple Scorum projects",
+  "main": "scss.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scorum/javascript.git"
+  },
+ "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "stylelint-scss",
+    "scss",
+    "scorum",
+    "sass",
+    "guidelines"
+  ],
+  "author": "Dmitriy Kokorev <dima.kokorev@scorum.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scorum/javascript/issues"
+  },
+  "homepage": "https://github.com/scorum/javascript",
+  "dependencies": {
+    "stylelint-config-sass-guidelines": "^7.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.0.0"
+  },
+  "devDependencies": {}
+}
