@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-scorum",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Different style configs ready to be used in multiple Scorum projects",
   "main": "scss.js",
   "files": [
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/scorum/javascript",
   "dependencies": {
-    "stylelint-config-sass-guidelines": "^7.0.0"
+    "stylelint-config-sass-guidelines": "^7.1.0"
   },
   "peerDependencies": {
     "stylelint": "^13.0.0"
